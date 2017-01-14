@@ -2,7 +2,7 @@
 	<form class="form-inline" method="get" action="/submit-subject-selection/">
 		{% if subjects %}
 		{% for subject in subjects %}
-			<input type="checkbox"> {{subject.name}}
+			<input type="checkbox" name="subjects"> {{subject.name}}
 		{% endfor %}
 		{% endif %}
 	</form>
