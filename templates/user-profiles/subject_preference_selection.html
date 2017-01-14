@@ -1,0 +1,9 @@
+<div class="col-md-6 col-md-offset-3 text-center">
+	<form class="form-inline" method="get" action="/submit-subject-selection/">
+		{% if subjects %}
+		{% for subject in subjects %}
+			<input type="checkbox"> {{subject.name}}
+		{% endfor %}
+		{% endif %}
+	</form>
+</div>
